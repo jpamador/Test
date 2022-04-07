@@ -1,0 +1,14 @@
+{
+  "name": "Utopia Project",
+  "version": "0.1.0",
+  "utopia": {
+    "main-ui": "utopia/storyboard.js",
+    "html": "public/index.html",
+    "js": "src/index.js"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "utopia-api": "0.4.1"
+  }
+}
