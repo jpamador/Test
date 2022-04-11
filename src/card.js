@@ -2,7 +2,10 @@ import { FlexCol, FlexRow } from './utils'
 
 export function Ratings(props) {
   return (
-    <FlexRow style={{ justifyContent: 'flex-start' }}>
+    <FlexRow
+      style={{ justifyContent: 'flex-start' }}
+      data-uid='1ca'
+    >
       {Array.from({ length: props.rating ?? 1 }).map(() => {
         return '*'
       })}
@@ -23,6 +26,7 @@ export var Card = (props) => {
         height: 326,
         ...props.style,
       }}
+      data-uid='22d'
     >
       <div
         style={{
@@ -32,7 +36,18 @@ export var Card = (props) => {
           flexBasis: 150,
           marginBottom: 8,
         }}
+        data-uid='2d0'
       />
+      <div
+        style={{
+          position: 'relative',
+          paddingLeft: 5,
+          color: 'rgb(0, 0, 0, 0.5)',
+        }}
+        data-uid='70d'
+      >
+        {props.description}
+      </div>
       <div
         style={{
           position: 'relative',
@@ -40,20 +55,13 @@ export var Card = (props) => {
           fontSize: '18px',
           fontWeight: 700,
           fontStyle: 'normal',
+          flexBasis: 0,
         }}
+        data-uid='17b'
       >
         {props.name}
       </div>
-      <div
-        style={{
-          position: 'relative',
-          paddingLeft: 5,
-          color: 'rgb(0, 0, 0, 0.5)',
-        }}
-      >
-        {props.country}
-      </div>
-      <Ratings rating={props.rating} />
+      <Ratings rating={props.rating} data-uid='f2c' />
     </FlexCol>
   )
 }
