@@ -52,6 +52,8 @@ export var App = () => {
           data-uid='f61'
         />
         <Button text='Add' data-uid='b55' />
+        <Button text='Add' data-uid='b55' />
+
       </TwoColumnGrid>
     </FlexCol>
   )
